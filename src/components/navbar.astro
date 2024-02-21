@@ -13,7 +13,7 @@ import down_arrow from "../../public/Images/down-arrow.svg";
       href="/"
       class="w-4/12 md:w-auto grow flex items-center flex-shrink-0 text-white mr-6 hover:cursor-pointer"
     >
-      <Image loading="eager"  src={logo} alt="logo" />
+      <Image loading="eager" src={logo} alt="logo" />
 
       <!-- <svg
                 width="201"
@@ -285,14 +285,15 @@ import down_arrow from "../../public/Images/down-arrow.svg";
     </a>
 
     <div
-          class="lg:hidden flex-none bg-[#3E96F4] inline-block px-3 md:py-2 pb-1 whitespace-nowrap rounded-md text-white font-semibold font-inter mr-2"
-        >
-          <a href="/contact-us" class="text-xs md:text-base">Inquire Now</a>
-  </div>
+      class="lg:hidden flex-none bg-[#3E96F4] inline-block px-3 md:py-2 pb-1 whitespace-nowrap rounded-md text-white font-semibold font-inter mr-2"
+    >
+      <a href="/contact-us" class="text-xs md:text-base">Inquire Now</a>
+    </div>
 
     <div class="block xl:hidden w-1/12 md:w-auto flex-none">
       <button
-        class="flex flex-col justify-center items-center px-2 py-2 text-[9px] rounded hover:text-black hover:border-white menu" id="open-menu"
+        class="flex flex-col justify-center items-center px-2 py-2 text-[9px] rounded hover:text-black hover:border-white menu"
+        id="open-menu"
       >
         <svg
           class="fill-current h-5 w-"
@@ -302,19 +303,24 @@ import down_arrow from "../../public/Images/down-arrow.svg";
             d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg
         >MENU
       </button>
-      
+
       <button
-        class="hidden flex flex-col justify-center items-center px-2 py-2 text-[9px] rounded hover:text-black hover:border-white menu" id="close-menu"
+        class="hidden flex flex-col justify-center items-center px-2 py-2 text-[9px] rounded hover:text-black hover:border-white menu"
+        id="close-menu"
       >
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="12" cy="12" r="12" fill="#3E96F4"/>
-        <path d="M8 16L16 8" stroke="white" stroke-width="2"/>
-        <path d="M16 16L8 8" stroke="white" stroke-width="2"/>
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="12" cy="12" r="12" fill="#3E96F4"></circle>
+          <path d="M8 16L16 8" stroke="white" stroke-width="2"></path>
+          <path d="M16 16L8 8" stroke="white" stroke-width="2"></path>
         </svg>
       </button>
-
     </div>
-    
 
     <div
       class="w-full hidden xl:flex xl:items-center xl:w-auto pb-0 md:pb-4 lg:pb-0 font-semibold text-base"
@@ -322,10 +328,10 @@ import down_arrow from "../../public/Images/down-arrow.svg";
     >
       <ul class="!leading-8 lg:flex-grow" id="main-menu">
         <!-- <li class="block mt-5 xl:inline-block xl:mt-0 mr-8 text-[#31393C]"> -->
-          <!-- <span class="group relative inline-block"> -->
-            <!-- <span class="flex gap-1"><a href="#" class="text-sm md:text-base">Solutions</a><Image loading="eager"  src={down_arrow} alt="Down Arrow" /></span> -->
-            <!-- <a href="#" class="text-sm md:text-base">Solutions</a> -->
-            <!-- <ul
+        <!-- <span class="group relative inline-block"> -->
+        <!-- <span class="flex gap-1"><a href="#" class="text-sm md:text-base">Solutions</a><Image loading="eager"  src={down_arrow} alt="Down Arrow" /></span> -->
+        <!-- <a href="#" class="text-sm md:text-base">Solutions</a> -->
+        <!-- <ul
               class="sub-menu w-[100%] md:w-auto lg:absolute z-10 hidden submenu-bg lg:top-[4.1rem] py-2 pr-[2.75rem] lg:-left-[1.5rem] left-[5rem] top-[0.75rem] md:group-hover:block overflow-x-hidden"
             >
               <li class="">
@@ -341,13 +347,9 @@ import down_arrow from "../../public/Images/down-arrow.svg";
                 >
               </li>
             </ul> -->
-          <!-- </span> -->
+        <!-- </span> -->
         <!-- </li> -->
-        <li class="block mt-5 xl:inline-block xl:mt-0 mr-8 text-[#31393C]">
-          <a href="/erpnext-implementation-partner" class="text-sm md:text-base">
-            ERPNext Partner</a
-          >
-        </li>
+
         <li class="block xl:inline-block xl:mt-0 mr-8 text-[#31393C]">
           <a href="/why-choose-erpnext" class="text-sm md:text-base">
             Why Choose ERPNext</a
@@ -355,7 +357,13 @@ import down_arrow from "../../public/Images/down-arrow.svg";
         </li>
         <li class="block xl:inline-block xl:mt-0 mr-8 text-[#31393C]">
           <span class="group relative inline-block">
-            <span class="flex gap-2"><a href="#" class="text-sm md:text-base">Industries</a><Image loading="eager"  src={down_arrow} alt="Down Arrow" /></span>
+            <span class="flex gap-2"
+              ><a href="#" class="text-sm md:text-base">Industries</a><Image
+                loading="eager"
+                src={down_arrow}
+                alt="Down Arrow"
+              /></span
+            >
             <!-- <a href="#" class="text-sm md:text-base">Industries</a> -->
             <ul
               class="sub-menu lg:absolute z-10 hidden submenu-bg lg:top-[3.75rem] py-2 pr-[2.75rem] lg:-left-[1.5rem] left-[5rem] top-[0.75rem] group-hover:block overflow-x-hidden"
@@ -412,6 +420,69 @@ import down_arrow from "../../public/Images/down-arrow.svg";
           </span>
         </li>
 
+        <!-- products start -->
+        <li class="block xl:inline-block xl:mt-0 mr-8 text-[#31393C]">
+          <span class="group relative inline-block">
+            <span class="flex gap-2"
+              ><a href="/products" class="text-sm md:text-base">Products</a><Image
+                loading="eager"
+                src={down_arrow}
+                alt="Down Arrow"
+              /></span
+            >
+            <ul
+              class="sub-menu lg:absolute z-10 hidden submenu-bg lg:top-[3.75rem] py-2 pr-[2.75rem] lg:-left-[1.5rem] left-[5rem] top-[0.75rem] group-hover:block overflow-x-hidden"
+            >
+              <li class="">
+                <a
+                  class="whitespace-pre block text-[#4D5F66] hover:text-[#3E96F4] py-2 lg:px-5 px-5 text-sm md:text-base"
+                  href="/real-estate-crm">Real Estate CRM</a
+                >
+              </li>
+              <li class="open-submenu">
+                <span class="group relative inline-block">
+                  <span class="flex"
+                    ><a
+                      href="#"
+                      class="whitespace-pre block text-[#4D5F66] hover:text-[#3E96F4] py-2 lg:px-5 px-5 text-sm md:text-base"
+                      >Integration</a
+                    ><Image
+                      loading="eager"
+                      src={down_arrow}
+                      alt="Down Arrow"
+                      class="-ml-3"
+                    /></span
+                  >
+                </span>
+
+                <div class="hidden dropdown-content ml-8 md:ml-10 lg:ml-0">
+                  <a
+                    href="/erpnext_whatsapp_integration"
+                    class="whitespace-pre block text-[#4D5F66] hover:text-[#3E96F4] py-2 lg:px-5 px-5 text-sm md:text-base"
+                    >ERPNext Whatsapp Integration</a
+                  >
+                  <a
+                    href="/erpnext_indiamart_integration_product"
+                    class="whitespace-pre block text-[#4D5F66] hover:text-[#3E96F4] py-2 lg:px-5 px-5 text-sm md:text-base"
+                    >ERPNext Indiamart Integration</a
+                  >
+                  <a
+                    href="erpnext_calling_integration"
+                    class="whitespace-pre block text-[#4D5F66] hover:text-[#3E96F4] py-2 lg:px-5 px-5 text-sm md:text-base"
+                    >ERPNext Tata Flow Integration</a
+                  >
+                  <a
+                    href="/chatgpt-integration"
+                    class="whitespace-pre block text-[#4D5F66] hover:text-[#3E96F4] py-2 lg:px-5 px-5 text-sm md:text-base"
+                    >ChatGPT Integration</a
+                  >
+                </div>
+              </li>
+            </ul>
+          </span>
+        </li>
+        <!-- products end -->
+
         <!-- <li class="block xl:inline-block xl:mt-0 mr-8 text-[#31393C]">
           <a href="/construction-equipment-as-a-service" class="text-sm md:text-base">
             Case Study</a
@@ -420,15 +491,29 @@ import down_arrow from "../../public/Images/down-arrow.svg";
 
         <li class="block xl:inline-block xl:mt-0 mr-8 text-[#31393C]">
           <span class="group relative inline-block">
-            <span class="flex gap-2"><a href="#" class="text-sm md:text-base">Case Study</a><Image loading="eager"  src={down_arrow} alt="Down Arrow" /></span>
-            
+            <span class="flex gap-2"
+              ><a href="#" class="text-sm md:text-base">Case Study</a><Image
+                loading="eager"
+                src={down_arrow}
+                alt="Down Arrow"
+              /></span
+            >
+
             <ul
               class="sub-menu lg:absolute z-10 hidden submenu-bg lg:top-[3.75rem] py-2 pr-[2.75rem] lg:-left-[1.5rem] left-[5rem] top-[0.75rem] group-hover:block overflow-x-hidden"
             >
               <li class="">
                 <a
                   class="whitespace-pre block text-[#4D5F66] hover:text-[#3E96F4] py-2 lg:px-5 px-5 text-sm md:text-base"
-                  href="/construction-equipment-as-a-service">Construction Equipment-as-a-Service</a
+                  href="/construction-equipment-as-a-service"
+                  >Construction Equipment-as-a-Service</a
+                >
+              </li>
+              <li class="">
+                <a
+                  class="whitespace-pre block text-[#4D5F66] hover:text-[#3E96F4] py-2 lg:px-5 px-5 text-sm md:text-base"
+                  href="/textile-industry-erpnext-implementation"
+                  >Textile Industry ERPNext Implementation</a
                 >
               </li>
               <li class="">
@@ -440,33 +525,26 @@ import down_arrow from "../../public/Images/down-arrow.svg";
               <li class="">
                 <a
                   class="whitespace-pre block text-[#4D5F66] hover:text-[#3E96F4] py-2 lg:px-5 px-5 text-sm md:text-base"
-                  href="/oracle-to-erpnext-migration">Oracle To ERPNext Migration</a
+                  href="/oracle-to-erpnext-migration"
+                  >Oracle To ERPNext Migration</a
                 >
               </li>
               <li class="">
                 <a
                   class="whitespace-pre block text-[#4D5F66] hover:text-[#3E96F4] py-2 lg:px-5 px-5 text-sm md:text-base"
-                  href="/textile-industry-erpnext-implementation">Textile Industry ERPNext Implementation</a
+                  href="/gramdharaa_gaushala">Gramdharaa Gaushala</a
                 >
               </li>
               <li class="">
                 <a
                   class="whitespace-pre block text-[#4D5F66] hover:text-[#3E96F4] py-2 lg:px-5 px-5 text-sm md:text-base"
-                  href="/erpnext-real-estate-crm">ERPNext Real Estate CRM</a>
-              </li>
-              <li class="">
-                <a
-                  class="whitespace-pre block text-[#4D5F66] hover:text-[#3E96F4] py-2 lg:px-5 px-5 text-sm md:text-base"
-                  href="/gramdharaa_gaushala">Gramdharaa Gaushala</a>
-              </li>
-              <li class="">
-                <a
-                  class="whitespace-pre block text-[#4D5F66] hover:text-[#3E96F4] py-2 lg:px-5 px-5 text-sm md:text-base"
-                  href="/quartz_manufacturers_and_exporters">Quartz Manufacturers And Exporters</a>
+                  href="/quartz_manufacturers_and_exporters">Quartz Manufactures And Exporters</a
+                >
               </li>
             </ul>
           </span>
         </li>
+
         <!-- <li
                     class="block  lg:inline-block lg:mt-0 mr-8 text-[#31393C]"
                 >
@@ -474,7 +552,13 @@ import down_arrow from "../../public/Images/down-arrow.svg";
                 </li> -->
         <li class="block xl:inline-block xl:mt-0 mr-8 text-[#31393C]">
           <span class="group relative inline-block">
-            <span class="flex gap-2"><a href="#" class="text-sm md:text-base">Company</a><Image loading="eager"  src={down_arrow} alt="Down Arrow" /></span>
+            <span class="flex gap-2"
+              ><a href="#" class="text-sm md:text-base">Company</a><Image
+                loading="eager"
+                src={down_arrow}
+                alt="Down Arrow"
+              /></span
+            >
             <!-- <a href="#" class="text-sm md:text-base">Company</a> -->
             <ul
               class="sub-menu lg:absolute z-10 hidden submenu-bg lg:top-[3.75rem] py-2 pr-[2.75rem] lg:-left-[1.5rem] left-[5rem] top-[0.75rem] group-hover:block overflow-x-hidden"
@@ -483,6 +567,12 @@ import down_arrow from "../../public/Images/down-arrow.svg";
                 <a
                   class="whitespace-pre block text-[#4D5F66] hover:text-[#3E96F4] py-2 lg:px-5 px-5 text-sm md:text-base"
                   href="/about">About</a
+                >
+              </li>
+              <li class="">
+                <a
+                  class="whitespace-pre block text-[#4D5F66] hover:text-[#3E96F4] py-2 lg:px-5 px-5 text-sm md:text-base"
+                  href="/erpnext-implementation-partner">ERPNext Partner</a
                 >
               </li>
               <li class="">
@@ -519,34 +609,32 @@ import down_arrow from "../../public/Images/down-arrow.svg";
   }
 
   @media only screen and (max-width: 668px) {
-    
     .submenu-bg {
-    border: none;
-    background: none;
-    box-shadow: none;
+      border: none;
+      background: none;
+      box-shadow: none;
+    }
   }
-}
 
-@media only screen and (max-width: 769px) {
-    
+  @media only screen and (max-width: 769px) {
     .submenu-bg {
-    border: none;
-    background: none;
-    box-shadow: none;
+      border: none;
+      background: none;
+      box-shadow: none;
+    }
   }
-}
 
-@media only screen and (max-width: 1023px) {
-    
+  @media only screen and (max-width: 1023px) {
     .submenu-bg {
-    border: none;
-    background: none;
-    box-shadow: none;
+      border: none;
+      background: none;
+      box-shadow: none;
+    }
   }
-}
 
-
-
+  .open-submenu:hover .dropdown-content {
+    display: block;
+  }
 </style>
 
 <script>
@@ -565,22 +653,18 @@ import down_arrow from "../../public/Images/down-arrow.svg";
 
       var menu = document.getElementById("close-menu");
       menu.classList.toggle("!block");
-
     });
   });
 
-//   const solutions = document.getElementById("solutions");
-//   // Handle clicks on each button.
-// //   solutions.forEach((button) => {
-//     solutions.addEventListener("click", () => {
-//       // alert('Button was clicked!');
-//       var submenu = document.getElementById("solution_submenu");
-//       submenu.classList.toggle("!block");
-//     });
-// //   });
-
-
-
+  //   const solutions = document.getElementById("solutions");
+  //   // Handle clicks on each button.
+  // //   solutions.forEach((button) => {
+  //     solutions.addEventListener("click", () => {
+  //       // alert('Button was clicked!');
+  //       var submenu = document.getElementById("solution_submenu");
+  //       submenu.classList.toggle("!block");
+  //     });
+  // //   });
 
   // const div = document.querySelectorAll('div.block');
   // div.forEach((div) => {

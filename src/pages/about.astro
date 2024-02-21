@@ -30,6 +30,7 @@ import brilliant_working from "../../public/Images/brilliant_working.svg";
 import brilliant_working_new from "../../public/Images/brilliant_working.jpg";
 import cta_mobile from "../../public/Images/cta-mobile.svg";
 import right from "../../public/Images/right.svg";
+import frappe_certified_partner from "../../public/Images/frappe-certified-partner.svg";
 
 ---
 
@@ -80,8 +81,14 @@ keyword="ERPNext partner, ERPNext development, ERP software development, ERP con
 		class="hidden lg:flex section-bg h-[80vh] lg:h-[90vh] xl:h-[75vh] flex items-center banner-bg "
 	>
 		<div
-			class="flex flex-wrap items-center mx-5 md:max-w-7xl md:mx-auto md:px-24 2xl:px-0"
+			class="flex flex-wrap items-center mx-5 md:max-w-7xl md:mx-auto md:px-24 2xl:px-0 relative"
 		>
+		<Image
+        class="absolute top-5 right-0" 
+        loading="eager"
+        src={frappe_certified_partner}
+        alt="frappe_certified_partner"
+      />
 			<div class="w-full md:w-6/12">
 				<h1
 					class="text-[1.75rem] md:text-[2.25rem] lg:text-[3rem] !leading-[2.25rem] md:!leading-[3.5rem] lg:leading-[4rem] text-[#31393C] font-extrabold"
@@ -98,7 +105,7 @@ keyword="ERPNext partner, ERPNext development, ERP software development, ERP con
 				loading="eager"
 				src={about_banner}
 				alt="banner image"
-				class=" lg:pt-[6rem] xl:pt-[4rem] w-full md:w-6/12 lg:p-10 md:p-8"
+				class=" lg:pt-[6rem] xl:pt-[4rem] w-full md:w-6/12 lg:p-20 md:p-8"
 			/>
 		</div>
 
@@ -108,9 +115,16 @@ keyword="ERPNext partner, ERPNext development, ERP software development, ERP con
 		class="section-bg banner-height flex items-center md:flex lg:hidden banner-bg py-[2rem] "
 	>
 		<div
-			class="flex flex-wrap items-center mx-5 gap-5 md:max-w-7xl md:mx-auto md:px-24 2xl:px-0"
+			class="flex flex-wrap items-center mx-5 gap-5 md:max-w-7xl md:mx-auto md:px-24 2xl:px-0 relative"
 		>
-			<div class="w-full lg:w-6/12 mt-5">
+		
+			<div class="w-full lg:w-6/12 mt-0 md:mt-4">
+				<Image
+				loading="eager"
+				src={frappe_certified_partner}
+				alt="frappe_ceritified_partner"
+				class="w-32 md:w-auto mb-5 md:mb-6"
+			/>
 				<div
 					class="text-[1.75rem] md:text-[2.25rem] lg:text-[3rem] !leading-[2.25rem] md:!leading-[3.5rem] lg:leading-[4rem] text-[#31393C] font-extrabold"
 				>
@@ -129,6 +143,8 @@ keyword="ERPNext partner, ERPNext development, ERP software development, ERP con
 				alt="banner image"
 				class="pt-[2rem] w-full"
 			/>
+
+
 		</div>
 	</section>
 

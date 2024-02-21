@@ -1277,7 +1277,9 @@ class="fixed right-5 bottom-5 z-30 items-center cursor-pointer"
                         ip: ipAddress,
                         browser_name: browserName,
                         device: device,
-                        need_customization: need_customization
+                        need_customization: need_customization,
+                        // enquiry_source:"ChatBot",
+                        // enquiry_status: "Open"
                         
                     })
                 }).then((res) => {
@@ -1448,8 +1450,9 @@ class="fixed right-5 bottom-5 z-30 items-center cursor-pointer"
                         ip: ipAddress,
                         browser_name: browserName,
                         device: device,
-                        need_customization: need_customization
-                        
+                        need_customization: need_customization,
+                        // enquiry_source:"ChatBot",
+                        // enquiry_status: "Open"
                     })
                 }).then((res) => {
                     if (res.status === 200) {
