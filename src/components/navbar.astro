@@ -3,6 +3,8 @@ import { Image, Picture } from "@astrojs/image/components";
 import "../styles.css";
 import logo from "../../public/Images/logo.svg";
 import down_arrow from "../../public/Images/down-arrow.svg";
+import right_arrow from "../../public/Images/right-arrow.svg";
+import products_product from "../../public/Images/products_product.svg";
 ---
 
 <nav class="border-b-2 py-5 md:py-5 px-5 md:px-0 bg-white">
@@ -420,68 +422,184 @@ import down_arrow from "../../public/Images/down-arrow.svg";
           </span>
         </li>
 
-        <!-- products start -->
-        <li class="block xl:inline-block xl:mt-0 mr-8 text-[#31393C]">
-          <span class="group relative inline-block">
-            <span class="flex gap-2"
-              ><a href="/products" class="text-sm md:text-base">Products</a><Image
-                loading="eager"
-                src={down_arrow}
-                alt="Down Arrow"
-              /></span
-            >
-            <ul
-              class="sub-menu lg:absolute z-10 hidden submenu-bg lg:top-[3.75rem] py-2 pr-[2.75rem] lg:-left-[1.5rem] left-[5rem] top-[0.75rem] group-hover:block overflow-x-hidden"
-            >
-              <li class="">
-                <a
-                  class="whitespace-pre block text-[#4D5F66] hover:text-[#3E96F4] py-2 lg:px-5 px-5 text-sm md:text-base"
-                  href="/real-estate-crm">Real Estate CRM</a
+      <!-- products start -->
+      <li class="block xl:hidden xl:mt-0 mr-8 text-[#31393C]">
+        <span class="group relative inline-block">
+          <span class="flex gap-2"
+            ><a href="/products" class="text-sm md:text-base">Products</a
+            ><Image loading="eager" src={down_arrow} alt="Down Arrow" /></span
+          >
+          <ul
+            class="sub-menu lg:absolute z-10 hidden submenu-bg lg:top-[3.75rem] py-2 pr-[2.75rem] lg:-left-[1.5rem] left-[5rem] top-[0.75rem] group-hover:block overflow-x-hidden"
+          >
+            <li class="">
+              <a
+                class="whitespace-pre block text-[#4D5F66] hover:text-[#3E96F4] py-2 lg:px-5 px-5 text-sm md:text-base"
+                href="/real-estate-crm">Real Estate CRM</a
+              >
+            </li>
+            <li class="open-submenu">
+              <span class="group relative inline-block">
+                <span class="flex"
+                  ><a
+                    href="#"
+                    class="whitespace-pre block text-[#4D5F66] hover:text-[#3E96F4] py-2 lg:px-5 px-5 text-sm md:text-base"
+                    >Integration</a
+                  ><Image
+                    loading="eager"
+                    src={down_arrow}
+                    alt="Down Arrow"
+                    class="-ml-3"
+                  /></span
                 >
-              </li>
-              <li class="open-submenu">
-                <span class="group relative inline-block">
-                  <span class="flex"
-                    ><a
-                      href="#"
-                      class="whitespace-pre block text-[#4D5F66] hover:text-[#3E96F4] py-2 lg:px-5 px-5 text-sm md:text-base"
-                      >Integration</a
-                    ><Image
-                      loading="eager"
-                      src={down_arrow}
-                      alt="Down Arrow"
-                      class="-ml-3"
-                    /></span
-                  >
-                </span>
+              </span>
 
-                <div class="hidden dropdown-content ml-8 md:ml-10 lg:ml-0">
+              <div class="hidden dropdown-content ml-8 md:ml-10 lg:ml-0">
+                <a
+                  href="/erpnext_whatsapp_integration"
+                  class="whitespace-pre block text-[#4D5F66] hover:text-[#3E96F4] py-2 lg:px-5 px-5 text-sm md:text-base"
+                  >ERPNext Whatsapp Integration</a
+                >
+                <a
+                  href="/erpnext_indiamart_integration_product"
+                  class="whitespace-pre block text-[#4D5F66] hover:text-[#3E96F4] py-2 lg:px-5 px-5 text-sm md:text-base"
+                  >ERPNext Indiamart Integration</a
+                >
+                <a
+                  href="/erpnext_calling_integration"
+                  class="whitespace-pre block text-[#4D5F66] hover:text-[#3E96F4] py-2 lg:px-5 px-5 text-sm md:text-base"
+                  >ERPNext Tata Flow Integration</a
+                >
+                <a
+                  href="/chatgpt-integration"
+                  class="whitespace-pre block text-[#4D5F66] hover:text-[#3E96F4] py-2 lg:px-5 px-5 text-sm md:text-base"
+                  >ChatGPT Integration</a
+                >
+              </div>
+            </li>
+          </ul>
+        </span>
+      </li>
+
+      <!-- for xl & 2xl screen start -->
+      <li class="hidden xl:inline-block xl:mt-0 mr-8 text-[#31393C]">
+        <span class="group relative inline-block">
+          <span class="flex gap-2"
+            ><a href="/products" class="text-sm md:text-base">Products</a
+            ><Image loading="eager" src={down_arrow} alt="Down Arrow" /></span
+          >
+          <ul
+            class="sub-menu lg:absolute z-10 hidden submenu-bg lg:top-[3.75rem] py-0 pr-[0rem] lg:-left-[1.5rem] left-[5rem] top-[0.75rem] group-hover:block overflow-x-hidden"
+          >
+            <div class="flex">
+              <div class="bg-[#F7FBFE] py-4 w-[15rem]">
+                <li class="">
                   <a
-                    href="/erpnext_whatsapp_integration"
-                    class="whitespace-pre block text-[#4D5F66] hover:text-[#3E96F4] py-2 lg:px-5 px-5 text-sm md:text-base"
-                    >ERPNext Whatsapp Integration</a
+                    class="whitespace-pre block text-[#31393C] font-bold py-2 lg:px-5 px-5 text-sm md:text-base cursor-auto"
+                    href="/#">Product</a
                   >
-                  <a
-                    href="/erpnext_indiamart_integration_product"
-                    class="whitespace-pre block text-[#4D5F66] hover:text-[#3E96F4] py-2 lg:px-5 px-5 text-sm md:text-base"
-                    >ERPNext Indiamart Integration</a
-                  >
-                  <a
-                    href="erpnext_calling_integration"
-                    class="whitespace-pre block text-[#4D5F66] hover:text-[#3E96F4] py-2 lg:px-5 px-5 text-sm md:text-base"
-                    >ERPNext Tata Flow Integration</a
-                  >
-                  <a
-                    href="/chatgpt-integration"
-                    class="whitespace-pre block text-[#4D5F66] hover:text-[#3E96F4] py-2 lg:px-5 px-5 text-sm md:text-base"
-                    >ChatGPT Integration</a
-                  >
-                </div>
-              </li>
-            </ul>
-          </span>
-        </li>
-        <!-- products end -->
+                  <div class="px-5 mt-2">
+                    <Image
+                      loading="eager"
+                      src={products_product}
+                      alt="products_product"
+                      class=""
+                    />
+                  </div>
+
+                  <div class="px-5">
+                    <p class="text-sm text-[#4D5F66] mt-4 mb-2">
+                      Transform Your Real Estate <br /> Business with a Cutting-
+                      <br /> edge CRM Solution.
+                    </p>
+                    <a href="/real-estate-crm"
+                      ><span class="text-base text-[#3E96F4]"
+                        >Explore our CRM</span
+                      ></a
+                    >
+                    <hr class=" w-[8rem] h-[2px] bg-[#3E96F4] -mt-[10px]">
+                  </div>
+                </li>
+              </div>
+
+              <div class="bg-[#FFFFFF] pr-[2.75rem] py-4">
+                <li class="">
+                  <span class="group relative inline-block">
+                    <span class="flex"
+                      ><a
+                        href="#"
+                        class="whitespace-pre block text-[#31393C] font-bold py-2 lg:px-5 px-5 text-sm md:text-base cursor-auto"
+                        >Integration</a
+                      ></span
+                    >
+                  </span>
+
+                  <div class="ml-8 md:ml-10 lg:ml-0">
+                    <div class="flex gap-x-3">
+                      <Image
+                        loading="eager"
+                        src={right_arrow}
+                        alt="right_arrow"
+                        class="ml-5"
+                      />
+                      <a
+                        href="/erpnext_whatsapp_integration"
+                        class="whitespace-pre block text-[#4D5F66] hover:text-[#3E96F4] py-2 lg:px-0 px-5 text-sm md:text-base"
+                        >ERPNext Whatsapp Integration</a
+                      >
+                    </div>
+
+                    <div class="flex gap-x-3">
+                      <Image
+                        loading="eager"
+                        src={right_arrow}
+                        alt="right_arrow"
+                        class="ml-5"
+                      />
+                      <a
+                        href="/erpnext_indiamart_integration_product"
+                        class="whitespace-pre block text-[#4D5F66] hover:text-[#3E96F4] py-2 lg:px-0 px-5 text-sm md:text-base"
+                        >ERPNext Indiamart Integration</a
+                      >
+                    </div>
+
+                    <div class="flex gap-x-3">
+                      <Image
+                        loading="eager"
+                        src={right_arrow}
+                        alt="right_arrow"
+                        class="ml-5"
+                      />
+                      <a
+                        href="/erpnext_calling_integration"
+                        class="whitespace-pre block text-[#4D5F66] hover:text-[#3E96F4] py-2 lg:px-0 px-5 text-sm md:text-base"
+                        >ERPNext Tata Flow Integration</a
+                      >
+                    </div>
+
+                    <div class="flex gap-x-3">
+                      <Image
+                        loading="eager"
+                        src={right_arrow}
+                        alt="right_arrow"
+                        class="ml-5"
+                      />
+                      <a
+                        href="/chatgpt-integration"
+                        class="whitespace-pre block text-[#4D5F66] hover:text-[#3E96F4] py-2 lg:px-0 px-5 text-sm md:text-base"
+                        >ChatGPT Integration</a
+                      >
+                    </div>
+                  </div>
+                </li>
+              </div>
+            </div>
+          </ul>
+        </span>
+      </li>
+      <!-- for xl & 2xl screen end -->
+
+      <!-- products end -->
 
         <!-- <li class="block xl:inline-block xl:mt-0 mr-8 text-[#31393C]">
           <a href="/construction-equipment-as-a-service" class="text-sm md:text-base">
