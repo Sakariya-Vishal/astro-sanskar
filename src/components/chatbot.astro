@@ -1265,6 +1265,7 @@ class="fixed right-5 bottom-5 z-30 items-center cursor-pointer"
                     headers: {
                         'Accept': 'application/json',
                         'Content-Type': 'application/json',
+                        'Authorization': `token ${apiKey}:${secretKey}`
                     },
                     body: JSON.stringify({
                         email: user_details[1].email,
@@ -1422,6 +1423,9 @@ class="fixed right-5 bottom-5 z-30 items-center cursor-pointer"
         // messages.scrollTop = messages.scrollHeight;
     }
 
+    const apiKey = import.meta.env.PUBLIC_ApiKey as string;
+    const secretKey = import.meta.env.PUBLIC_SecretKey as string;
+
     function close_popup() {
             while (messagesDiv.firstChild){
                 messagesDiv.removeChild(messagesDiv.firstChild)
@@ -1437,6 +1441,7 @@ class="fixed right-5 bottom-5 z-30 items-center cursor-pointer"
                     headers: {
                         'Accept': 'application/json',
                         'Content-Type': 'application/json',
+                        'Authorization': `token ${apiKey}:${secretKey}`
                     },
                     body: JSON.stringify({
                         email: user_details[1].email,
