@@ -1166,7 +1166,14 @@ function blinkBorder(element) {
 
         const fileInput = document.getElementById('fileInput');
         const file = fileInput.files[0];
-
+        const urlParams = new URLSearchParams(window.location.search);
+                
+                // Get the value of the 'page' parameter
+                const pageValue = urlParams.get('page');
+                
+                const demoForValue = pageValue || '';
+                
+                const queryTypeValue = pageValue ? "Demo" : "General";
         if (!file) {
             // alert('Please select a file to upload.');
                 const formData = new FormData(e.target);
@@ -1178,36 +1185,7 @@ function blinkBorder(element) {
                 var country = data.country;
                 var phone = data.code +' '+ data.phone;
                 var message = data.message;
-                //   var file = data.file;
-                // console.log(first_name, last_name, email, country, phone, message, file_url);
-
-                // if (first_name === ""){
-                //   alert("Please enter first name")
-                // }
-
-                // if (last_name === ""){
-                //   alert("Please enter last name")
-                // }
-
-                // if (email === ""){
-                //   alert("Please enter email")
-                // }
-                // else{
-                //   var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                //   if (!emailRegex.test(email)) {
-                //       alert('Please enter a valid email address.');
-                //   }
-                // }
-                
-                
-                const urlParams = new URLSearchParams(window.location.search);
-                
-                // Get the value of the 'page' parameter
-                const pageValue = urlParams.get('page');
-                
-                const demoForValue = pageValue || '';
-                
-                const queryTypeValue = pageValue ? "Demo" : "General";
+                              
 
                 // console.log("sfg", pageValue)
 
