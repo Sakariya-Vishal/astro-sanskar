@@ -2259,7 +2259,7 @@ import hire_sahil from "../../public/Images/hire_sahil.svg";
                         <div>
                             <input
                                 type="text"
-                                placeholder="Your Name"
+                                placeholder="Your Name*"
                                 class="rounded w-full"
                                 name="name"
                                 required
@@ -2269,7 +2269,7 @@ import hire_sahil from "../../public/Images/hire_sahil.svg";
                         <div>
                             <input
                                 type="email"
-                                placeholder="Email Address"
+                                placeholder="Email Address*"
                                 class="rounded w-full"
                                 name="email"
                                 required
@@ -2291,7 +2291,7 @@ import hire_sahil from "../../public/Images/hire_sahil.svg";
                             name="message"
                             id=""
                             rows="5"
-                            placeholder="Describe Your Requirements"
+                            placeholder="Describe Your Requirements*"
                             class="w-full rounded p-3"
                             required></textarea>
                     </div>
@@ -2315,7 +2315,7 @@ import hire_sahil from "../../public/Images/hire_sahil.svg";
     <!-- Schedule A Developer Interview End -->
 
     <!-- Frequently Asked Questions (FAQs) start -->
-    <section
+    <!-- <section
         class="mx-5 md:max-w-7xl md:mx-auto py-[2rem] md:py-[2rem] lg:py-[4rem] md:px-24 2xl:px-0"
     >
         <div
@@ -2549,7 +2549,7 @@ import hire_sahil from "../../public/Images/hire_sahil.svg";
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Frequently Asked Questions (FAQs) End -->
 </Layout>
 
@@ -2735,62 +2735,57 @@ import hire_sahil from "../../public/Images/hire_sahil.svg";
             return;
         }
 
-    // alert('Please select a file to upload.');
-    const formData = new FormData(e.target);
-    const data = Object.fromEntries(formData.entries());
-    formData.set("data", JSON.stringify(data));
-    var name = data.name;
+        // alert('Please select a file to upload.');
+        const formData = new FormData(e.target);
+        const data = Object.fromEntries(formData.entries());
+        formData.set("data", JSON.stringify(data));
+        var name = data.name;
+        var email = data.email;
+        var phone = data.phone;
+        var message = data.message;
 
-    var email = data.email;
-
-    var phone = data.phone;
-    var message = data.message;
-
-
-
-    fetch("https://sanskar.frappe.cloud/api/resource/Enquiry", {
-        method: "POST",
-        headers: {
-            Accept: "application/json",
-            "Content-Type": "application/json",
-            Authorization: `token ${apiKey}:${secretKey}`,
-        },
-        body: JSON.stringify({
-            first_name: name,
-            email: email,
-            phone: phone,
-            message: message,
-            enquiry_source: "Website Enquiry",
-            query_type: "Developer Interview",
-           
-        }),
-    })
-        .then((res) => {
-            console.log("asdfasd", res);
-            if (res.status === 200) {
-                // alert("You have been registered successfully.")
-                enableUserInteractions();
-                window.location.href = "/thank-you";
-            } else {
-                enableUserInteractions();
-                alert("failed");
-            }
+        fetch("https://sanskar.frappe.cloud/api/resource/Enquiry", {
+            method: "POST",
+            headers: {
+                Accept: "application/json",
+                "Content-Type": "application/json",
+                Authorization: `token ${apiKey}:${secretKey}`,
+            },
+            body: JSON.stringify({
+                first_name: name,
+                email: email,
+                phone: phone,
+                message: message,
+                enquiry_source: "Website Enquiry",
+                query_type: "Developer Interview",
+            }),
         })
-        .catch((error) => {
-            console.log(error);
-            // enableUserInteractions();
-        });
+            .then((res) => {
+                console.log("asdfasd", res);
+                if (res.status === 200) {
+                    // alert("You have been registered successfully.")
+                    enableUserInteractions();
+                    window.location.href = "/thank-you";
+                } else {
+                    enableUserInteractions();
+                    alert("failed");
+                }
+            })
+            .catch((error) => {
+                console.log(error);
+                // enableUserInteractions();
+            });
 
-    // Helper function to disable user interactions
-    function disableUserInteractions() {
-        document.body.style.pointerEvents = "none";
-        document.body.style.opacity = "0.5";
-    }
+        // Helper function to disable user interactions
+        function disableUserInteractions() {
+            document.body.style.pointerEvents = "none";
+            document.body.style.opacity = "0.5";
+        }
 
-    // Helper function to re-enable user interactions
-    function enableUserInteractions() {
-        document.body.style.pointerEvents = "auto";
-        document.body.style.opacity = "1";
+        // Helper function to re-enable user interactions
+        function enableUserInteractions() {
+            document.body.style.pointerEvents = "auto";
+            document.body.style.opacity = "1";
+        }
     }
-}
 </script>
